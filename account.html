@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Test<br>A Test</h1>
+            <p>test</p>
+        </div>
+        <div class="col-2"></div>
+    </div>
+   </div>
+<!--------- account -page------>
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forget password</a>
+                    </form>
+
+                    <form id="RegisterForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegisterForm = document.getElementById("RegisterForm"); 
+        var Indicator = document.getElementById("Indicator");
+
+            function register(){
+
+                RegisterForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)"
+                Indicator.style.transform = "translateX(100px)"
+            }
+
+            function login(){
+
+                RegisterForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)"
+                Indicator.style.transform = "translateX(0px)"
+            }
+
+
+    </script>
+</div>
+</body>
+</html>
