@@ -26,70 +26,73 @@
     </div>
    </div>
 <!--account-->
-<div class="account-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-2">
-                <div class="form-container">
-                    <div class="form-btn">
-                        <span onclick="login()">Login</span>
-                        <span onclick="register()">Register</span>
-                        <hr id="Indicator">
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forget password</a>
+                        </form>
+
+                        <form id="RegisterForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                        </form>
                     </div>
-
-                    <form id="LoginForm">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="">Forget password</a>
-                    </form>
-
-                    <form id="RegisterForm">
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Login</button>
-                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
     
-        MenuItems.style.maxHeight = "0px"
+            MenuItems.style.maxHeight = "0px"
     
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "0px")
-                {
-                    MenuItems.style.maxHeight = "200px"
-                }
-            else
-                {
-                    MenuItems.style.maxHeight = "0px"
-                }
-        }
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px"
+                    }
+                else
+                    {
+                        MenuItems.style.maxHeight = "0px"
+                    }
+            }
         
-        var LoginForm = document.getElementById("LoginForm");
-        var RegisterForm = document.getElementById("RegisterForm"); 
-        var Indicator = document.getElementById("Indicator");
+            var LoginForm = document.getElementById("LoginForm");
+            var RegisterForm = document.getElementById("RegisterForm"); 
+            var Indicator = document.getElementById("Indicator");
 
-            function register(){
+                function register(){
 
-                RegisterForm.style.transform = "translateX(0px)";
-                LoginForm.style.transform = "translateX(0px)"
-                Indicator.style.transform = "translateX(100px)"
-            }
+                    RegisterForm.style.transform = "translateX(0px)";
+                    LoginForm.style.transform = "translateX(0px)"
+                    Indicator.style.transform = "translateX(100px)"
+                }
 
-            function login(){
+                function login(){
 
-                RegisterForm.style.transform = "translateX(300px)";
-                LoginForm.style.transform = "translateX(300px)"
-                Indicator.style.transform = "translateX(0px)"
-            }
+                    RegisterForm.style.transform = "translateX(300px)";
+                    LoginForm.style.transform = "translateX(300px)"
+                    Indicator.style.transform = "translateX(0px)"
+                }
 
 
-    </script>
-</div>
+        </script>
+    </div>
 </body>
 </html>
