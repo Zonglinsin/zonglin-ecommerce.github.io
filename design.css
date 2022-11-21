@@ -18,6 +18,7 @@ nav {
 nav ul {
     display: inline-block;
     list-style-type: none;
+    z-index: 2;
 }
 
 nav ul li {
@@ -84,6 +85,8 @@ p{
         cursor: pointer;
     }
 }
+
+
 /*footer*/
 .footer {
     background-color: #000;
