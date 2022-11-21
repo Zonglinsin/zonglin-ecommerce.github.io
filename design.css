@@ -60,6 +60,19 @@ p{
     padding: 60px 0 20px
 }
 
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
 /*account page*/
 
 .account-page {
