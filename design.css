@@ -42,11 +42,17 @@ p{
     color: #555;
 }
 
-.container {
-    max-width: 1300px;
+.nav-container {
+    max-width: 100%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+
 }
 
 .row {
@@ -228,7 +234,7 @@ p{
 
 }
 
-form input {
+#LoginForm input ,#RegisterForm input {
     width: 100%;
     height: 30px;
     margin: 10px 0;
@@ -236,14 +242,14 @@ form input {
     border: 1px solid #ccc;
 }
 
-form .btn {
+#LoginForm .btn,#RegisterForm .btn {
     width: 100%;
     border: none;
     cursor: pointer;
     margin: 10px 0;
 }
 
-form .btn:focus {
+#LoginForm form .btn:focus {
     outline: none;
 }
 #LoginForm{
@@ -268,4 +274,71 @@ form a {
     transform: translateX(100px);
     transition: transform 1s;
 }
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: radial-gradient(#fff,#ffd6d6);
+    min-width: 100%;
+    height: 20vh;
+    padding: 40px 80px;
+}
 
+.newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.newsletter .newsletter-form{
+    display: flex;
+    width: 30%;
+
+}
+
+.newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+
+/*Contact-Page*/
+.contact-container .contact-details, .contact-form-container .contact-form-details{
+    min-width: 100%;
+    padding: 40px 80px;
+}
+
+.contact-form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form-details form input{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+}
+
+.contact-form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
