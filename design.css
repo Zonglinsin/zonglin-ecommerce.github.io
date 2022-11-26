@@ -379,3 +379,10 @@ form a {
     background-color: #ff523b;
     color: #fff;
 }
+
+@media (max-width: 477px) {
+    .contact-container .contact-details, .contact-form-container .contact-form-details{
+        min-width: 100%;
+        padding: 20px 40px;
+    }
+}
