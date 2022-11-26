@@ -317,11 +317,50 @@ form a {
 
 
 /*Contact-Page*/
+.contact-header{
+    background-image: url("images/about/banner.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
+}
 .contact-container .contact-details, .contact-form-container .contact-form-details{
     min-width: 100%;
     padding: 40px 80px;
 }
+.contact-details ,.contact-form-details span{
+    font-size: 12px;
+}
+.contact-details ,.contact-form-details h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
 
+.contact-details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.contact-details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+.contact-details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+.contact-details li p {
+    font-size: 14px;
+    margin: 0;
+}
 .contact-form-details form{
     width: 65%;
     display: flex;
@@ -329,16 +368,14 @@ form a {
     align-items: flex-start;
 }
 
-.contact-form-details form input{
+.contact-form-details form textarea,.contact-form-details form input{
     width: 100%;
     padding: 12px 15px;
     outline: none;
+    border: 1px solid #e1e1e1;
 }
 
-.contact-form-details form textarea{
-    width: 100%;
-    padding: 12px 15px;
-    outline: none;
-    margin-bottom: 20px;
-    border: 1px solid #e1e1e1;
+.contact-form-details form button{
+    background-color: #ff523b;
+    color: #fff;
 }
