@@ -387,6 +387,17 @@ form a {
     }
     .contact-form-details form{
         width: 100%;
-        
     }
+    
+}
+
+@media (max-width: 820px) {
+    .contact-container .contact-details, .contact-form-container .contact-form-details{
+        min-width: 100%;
+        padding: 20px 40px;
+    }
+    .contact-form-details form{
+        width: 80%;
+    }
+    
 }
