@@ -385,4 +385,8 @@ form a {
         min-width: 100%;
         padding: 20px 40px;
     }
+    .contact-form-details form{
+        width: 100%;
+        
+    }
 }
