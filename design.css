@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.nav-container {
+    background: #e3e6e3;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -113,6 +115,7 @@ p{
 .col-4:hover{
     transform: translateY(-5px);
 }
+/*index*/
 .small-container {
     max-width: 1080px;
     margin: auto;
@@ -142,7 +145,7 @@ p{
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
-        top: 70px;
+        top: 60px;
         left: 0;
         background: #333;
         width: 100%;
@@ -281,7 +284,7 @@ form a {
     align-items: center;
     background: radial-gradient(#fff,#ffd6d6);
     min-width: 100%;
-    height: 20vh;
+    
     padding: 40px 80px;
 }
 
@@ -313,6 +316,20 @@ form a {
     font-size: 14px;
     font-weight: 600;
     color: #818ea0;
+}
+@media (max-width: 477px){
+    .newsletter{
+        padding: 20px 40px;
+    }
+    .newsletter .newsletter-form {
+        width: 100%;
+    }
+    .newsletter-form input {
+        width: 70%;
+    }
+    .newsletter-form button{
+        width: 30%;
+    }
 }
 
 
