@@ -59,6 +59,7 @@ p{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+/*Banner-Page*/
 .banner-container{
     display: flex;
     align-items: center;
@@ -72,7 +73,7 @@ p{
     min-width: 300px;
 }
 
-.banner img {
+.banner-container .banner-img {
     max-width: 100%;
     padding: 50px 0;
 }
@@ -91,6 +92,7 @@ p{
     font-size: 23px;
     font-weight: 100;
 } 
+/*button-type*/
 .btn {
     display: inline-block;
     background-color: #ff523b;
@@ -112,19 +114,42 @@ p{
     margin-left: 20px;
     display: none;
 }
-.col-3 {
-    background: #fff;
+/*Feauture*/
+.feauture{
+    padding: 40px 80px;
     display: flex;
     align-items: center;
-    margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
-    margin-top: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.feauture .feauture-container {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+.feauture .feauture-container h6{
+    font-size: 15px;
+    display: inline-block;
+    padding: 9px 8px 6px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddded;
+}
+
+.feauture .feauture-container img {
+    width: 100%;
+    margin-bottom: 10px;
 }
 /*FeautureProduct-Page*/
 .title{ 
     text-align: center;
-    margin: 0 auto 80px;
     position: relative;
+    font-size: 30px;
     line-height: 60px;
     color: #555;
 }
