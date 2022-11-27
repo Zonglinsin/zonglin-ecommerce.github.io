@@ -74,7 +74,6 @@ p{
 }
 
 .banner-container .banner-img {
-    max-width: 100%;
     padding: 50px 0;
 }
 
@@ -218,7 +217,7 @@ p{
 
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 477px){
     nav ul{
         position: absolute;
         top: 60px;
@@ -274,7 +273,6 @@ p{
 
 .offer {
     background: radial-gradient(#fff,#ffd6d6);
-    margin-top: 80px;
 }
 
 .form-container {
