@@ -100,30 +100,8 @@ p{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     margin-top: 10px;
 }
-.col-4{
-    flex-basis: 25%;
-    padding: 10px;
-    min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
-}
-
-.col-4 img{
-    width: 100%;
-}
-
-.col-4:hover{
-    transform: translateY(-5px);
-}
-/*index*/
-.small-container {
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;    
-}
-
-.title{
+/*FeautureProduct-Page*/
+.title{ 
     text-align: center;
     margin: 0 auto 80px;
     position: relative;
@@ -142,6 +120,59 @@ p{
     left: 50%;
     transform: translateX(-50%);
 }
+.product1 {
+    text-align: center;
+    padding: 40px 80px;
+}
+.product1 .prod-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.product1 .product{
+    width: 24%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    margin: 15px 0;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    border-radius: 25px;
+    transition: 0.2 ease;
+}
+.product1 .product:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+.product1 .product img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product1 .product .des{
+    text-align: start;
+    padding: 10px 0;
+}
+.product1 .product .des span {
+    color: #606063;
+    font-size: 14px;
+}
+
+.product1 .product .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.product1 .product .des h4 {
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178;
+}
+/*index*/
+
+
+
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
@@ -323,6 +354,8 @@ form a {
     }
     .newsletter .newsletter-form {
         width: 100%;
+        padding-top: 10px;
+
     }
     .newsletter-form input {
         width: 70%;
