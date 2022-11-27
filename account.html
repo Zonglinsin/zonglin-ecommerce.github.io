@@ -38,69 +38,75 @@
                             <span onclick="register()">Register</span>
                             <hr id="Indicator">
                         </div>
-
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
-                            <a href="">Forget password</a>
+                        <form action="#"id="LoginForm">
+                            <div class="input-group">
+                                <input type="text" placeholder="Username"id="LoginName" onkeyup="validateUsername()">
+                                <span id="Username-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" placeholder="Password" id="Loginpass" onkeyup="validateLoginPass()">
+                                <span id="Loginpass-error"></span>
+                            </div>
+                            <button onclick="return validateLoginForm()" class="btn">Login</button>
+                            <a href="" >Forget password</a>
+                            <span id="login-error"></span>
                         </form>
-
-                        <form id="RegisterForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
+                        <form action="#"id="RegisterForm">
+                            <div class="input-group">
+                                <input type="text" placeholder="Username"id="username" onkeyup="validateName()">
+                                <span id="name-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Email" id="email" onkeyup="validateEmail()">
+                                <span id="email-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <input type="password" placeholder="Password" id="pass" onkeyup="validatePass()">
+                                <span id="pass-error"></span>
+                            </div>
+                            <button onclick="return validateRegisterForm()"class="btn">Register</button>
+                            <span id="register-error"></span>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            var MenuItems = document.getElementById("MenuItems");
-    
-            MenuItems.style.maxHeight = "0px"
-    
-            function menutoggle(){
-                if(MenuItems.style.maxHeight == "0px")
-                    {
-                        MenuItems.style.maxHeight = "200px"
-                    }
-                else
-                    {
-                        MenuItems.style.maxHeight = "0px"
-                    }
-            }
-        
-            var LoginForm = document.getElementById("LoginForm");
-            var RegisterForm = document.getElementById("RegisterForm"); 
-            var Indicator = document.getElementById("Indicator");
-
-                function register(){
-
-                    RegisterForm.style.transform = "translateX(0px)";
-                    LoginForm.style.transform = "translateX(0px)"
-                    Indicator.style.transform = "translateX(100px)"
-                }
-
-                function login(){
-
-                    RegisterForm.style.transform = "translateX(300px)";
-                    LoginForm.style.transform = "translateX(300px)"
-                    Indicator.style.transform = "translateX(0px)"
-                }
-
-
-        </script>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h3>Download Our App</h3>
-                </div>
-            </div>
+        <div class="popup" id="popup">
+            <h2>Login Success!</h2>
+            <p>Your can close this windows</p>
+            <button type="button" onclick="closePopup()">OK</button>
         </div>
     </div>
+    <div class="footer">
+        <div class="small-container">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>56 Jalan Ding Ding Dong Selangor Malaysia</p>
+            <p><strong>Phone: </strong>contact@example.com</p>
+            <p><strong>Hours: </strong>Monday to Saturday: 9:00am to 16:00pm</p>
+        </div>
+        <div class="small-container">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="small-container">
+            <h4>My Account</h4>
+            <a href="account.html">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Support & Help</a>
+        </div>
+        <div class="app">
+            <h4>Download Our App</h4>
+            <p>From App Store or Google Play</p>
+        </div>
+        <div class="copyright">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

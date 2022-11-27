@@ -28,6 +28,24 @@
         <h2>LetsTalk</h2>
         <p>LEAVE A MESSAGE, We love to hear you</p>
     </div>
+    <div class="contact-form-container">
+        <div class="contact-form-details">
+            <form action="#">
+                <span>LEAVE A MESSAGE TO US</span>
+                <h2>We love to hear you</h2>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            </form>
+        </div>
+        <div class="popup" id="popup">
+            <h2>Thank You!</h2>
+            <p>Your details has been successfully submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
     <div class="contact-container">
         <div class="contact-details">
             <span>GET IN TOUCH</span>
@@ -47,44 +65,14 @@
                     <p>contact@example.com</p>
                 </li>
                 <li>
-                    <i>Business Hours:</i>
+                    <i>Hours:</i>
                     <p>Monday to Saturday: 9:00am to 16:00pm</p>
                 </li>
                 </div>
         </div>
     </div>
-    <div class="contact-form-container">
-        <div class="contact-form-details">
-            <form action="">
-                <span>LEAVE A MESSAGE TO US</span>
-                <h2>We love to hear you</h2>
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Subject">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button  class="btn">Submit</button>
-            </form>
-        </div>
-    </div>
     
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
     
-        MenuItems.style.maxHeight = "0px"
-        
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "0px")
-                {
-                    MenuItems.style.maxHeight = "200px"
-                }
-            else
-                {
-                    MenuItems.style.maxHeight = "0px"
-                }
-        }
-
-
-      </script>
-  
+<script src="script.js"></script>   
 </body>
 </html>

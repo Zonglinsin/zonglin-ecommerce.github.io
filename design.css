@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 .nav-container {
     max-width: 100%;
@@ -52,14 +53,10 @@ a{
 p{
     color: #555;
 }
-
-.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/*Banner-Homepage*/
+.offer {
+    background: radial-gradient(#414141,#000);
 }
-/*Banner-Page*/
 .banner-container{
     display: flex;
     align-items: center;
@@ -81,13 +78,16 @@ p{
     padding: 20px 0;
     font-size: 40px;
     font-weight: 600;
+    color: #fff;
 }
 .banner h4 {
     font-size: 30px;
     font-weight: 600;
     padding: 20px 0;
+    color: #fff;
 }
 .banner p{
+    color: #ffffffdf;
     font-size: 23px;
     font-weight: 100;
 } 
@@ -102,18 +102,35 @@ p{
 }
 
 .btn-2 {
-    display: inline-block;
-    border: 1px solid;
-    width: 20%;
-    text-align: center;
-    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+.btn-3 {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
 }
 .menu-icon { 
     width: 28px;
     margin-left: 20px;
     display: none;
 }
-/*Feauture*/
+/*Feauture-Homepage*/
 .feauture{
     padding: 40px 80px;
     display: flex;
@@ -144,7 +161,7 @@ p{
     width: 100%;
     margin-bottom: 10px;
 }
-/*FeautureProduct-Page*/
+/*FeautureProduct-HomePage*/
 .title{ 
     text-align: center;
     position: relative;
@@ -164,17 +181,17 @@ p{
     left: 50%;
     transform: translateX(-50%);
 }
-.product1 {
+.product1 , .product2{
     text-align: center;
     padding: 40px 80px;
 }
-.product1 .prod-container{
+.product2 .prod-container, .product1 .prod-container{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
 }
-.product1 .product{
+.product1 .product, .product2 .product{
     width: 24%;
     min-width: 250px;
     padding: 10px 12px;
@@ -184,40 +201,162 @@ p{
     border-radius: 25px;
     transition: 0.2 ease;
 }
-.product1 .product:hover{
+.product1 .product:hover ,.product2 .product:hover{
     box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
 }
-.product1 .product img{
+.product1 .product img ,.product2 .product img{
     width: 100%;
     border-radius: 20px;
 }
 
-.product1 .product .des{
+.product1 .product .des ,.product2 .product .des{
     text-align: start;
     padding: 10px 0;
 }
-.product1 .product .des span {
+.product1 .product .des span ,.product2 .product .des span{
     color: #606063;
     font-size: 14px;
 }
 
-.product1 .product .des h5{
+.product1 .product .des h5, .product2 .product .des h5{
     padding-top: 7px;
     color: #1a1a1a;
     font-size: 20px;
 }
 
-.product1 .product .des h4 {
+.product1 .product .des h4 ,.product2 .product .des h4{
     padding-top: 7px;
     font-size: 20px;
     font-weight: 700;
     color: #088178;
 }
-/*index*/
 
+/*Services-HomePage*/
+.services {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    background: radial-gradient(#414141,#000);
+}
 
+.services h4{
+    color: #fff;
+    font-size: 18px;
+}
+.services h3{
+    padding: 10px 0;
+    font-size: 50px;
+    color: #fff;
+}
+.services h2{
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.services span{
+    color: #e62a2a;
+}
 
-@media only screen and (max-width: 477px){
+/*footer*/
+.footer {
+    display: flex;
+    background-color: #fff;
+    padding: 40px 80px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.footer p{
+    font-size: 12px;
+    margin: 0 0 8px;
+}
+.footer a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 5px;
+}
+.small-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+/*Newsletter*/
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: radial-gradient(#414141,#000);
+    min-width: 100%;
+    padding: 40px 80px;
+    margin-top: 40px;
+}
+
+.newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid ;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.newsletter button{
+    border: 1px solid ;
+    cursor: pointer;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.newsletter .newsletter-form{
+    display: flex;
+    width: 30%;
+
+}
+
+.newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+/*Newsletter media@*/
+@media (max-width: 477px){
+    .newsletter{
+        padding: 20px 40px;
+    }
+    .newsletter .newsletter-form {
+        width: 100%;
+        padding-top: 10px;
+
+    }
+    .newsletter-form input {
+        width: 70%;
+    }
+    .newsletter-form button{
+        width: 30%;
+    }
+}
+/*Navbar media@*/
+@media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
         top: 60px;
@@ -241,173 +380,18 @@ p{
         cursor: pointer;
     }
 }
-
-
-/*footer*/
-.footer {
-    background-color: #000;
-    color: #8a8aa8;
-    font-size: 14px;
-    padding: 60px 0 20px
+/*Product-Page*/
+.pagination{
+    text-align: center;   
 }
-
-.footer p {
-    color: #8a8a8a;
-}
-
-.footer h3 {
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.footer-col {
-    min-width: 250px;
-    margin-bottom: 20px;
-}
-/*account page*/
-
-.account-page {
-    padding: 50px 0;
-    background: radial-gradient(#fff,#ffd6d6);
-}
-
-.offer {
-    background: radial-gradient(#fff,#ffd6d6);
-}
-
-.form-container {
-    background: #fff;
-    width: 300px;
-    height: 400px;
-    position: relative;
-    text-align: center;
-    padding: 20px 0;
-    margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
-    overflow: hidden;
-    
-}
-
-.form-container span {
-    font-weight: bold;
-    padding: 0 10px;
-    color: #555;
-    cursor: pointer;
-    width: 100px;
-    display: inline-block;
-}
-
-.form-btn {
-    display: inline-block;
-}
-
-.form-container form {
-    max-width: 300px;
-    padding: 0 20px;
-    position: absolute;
-    top: 130px;
-    transition: transform 1s;
-
-}
-
-#LoginForm input ,#RegisterForm input {
-    width: 100%;
-    height: 30px;
-    margin: 10px 0;
-    padding: 0 10px;
-    border: 1px solid #ccc;
-}
-
-#LoginForm .btn,#RegisterForm .btn {
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    margin: 10px 0;
-}
-
-#LoginForm form .btn:focus {
-    outline: none;
-}
-#LoginForm{
-    left: -300px
-
-}
-#RegisterForm{
-    left: 0
-}
-
-form a {
-    font-size: 12px;
-
-}
-
-#Indicator {
-    width: 100px;
-    border: none;
-    background: #ff523b;
-    height: 3px;
-    margin-top: 8px;
-    transform: translateX(100px);
-    transition: transform 1s;
-}
-.newsletter{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background: radial-gradient(#fff,#ffd6d6);
-    min-width: 100%;
-    
-    padding: 40px 80px;
-}
-
-.newsletter input{
-    height: 3.125rem;
-    padding: 0 1.25em;
-    font-size: 14px;
-    width: 100%;
-    border: 1px solid transparent;
+.pagination a{
+    text-decoration: none;
+    background-color: #222;
+    padding: 15px 20px;
     border-radius: 4px;
-    outline: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.newsletter .newsletter-form{
-    display: flex;
-    width: 30%;
-
-}
-
-.newsletter h4 {
-    font-size: 22px;
-    font-weight: 700;
     color: #fff;
-}
-
-.newsletter p {
-    font-size: 14px;
     font-weight: 600;
-    color: #818ea0;
 }
-@media (max-width: 477px){
-    .newsletter{
-        padding: 20px 40px;
-    }
-    .newsletter .newsletter-form {
-        width: 100%;
-        padding-top: 10px;
-
-    }
-    .newsletter-form input {
-        width: 70%;
-    }
-    .newsletter-form button{
-        width: 30%;
-    }
-}
-
-
 /*Contact-Page*/
 .contact-header{
     background-image: url("images/about/banner.png");
@@ -471,7 +455,38 @@ form a {
     background-color: #ff523b;
     color: #fff;
 }
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden  ;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
 
+}
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*Contact-media@*/
 @media (max-width: 477px) {
     .contact-container .contact-details, .contact-form-container .contact-form-details{
         min-width: 100%;
@@ -492,4 +507,112 @@ form a {
         width: 80%;
     }
     
+}
+
+/*Account-page*/
+
+.account-page {
+    padding: 50px 0;
+    background: radial-gradient(#414141,#000);
+}
+
+.form-container {
+    background: #fff;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+    
+}
+
+.form-btn span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 50px;
+    transition: transform 1s;
+
+}
+
+#LoginForm input ,#RegisterForm input {
+    width: 250px;
+    height: 30px;
+    margin: 20px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+#LoginForm .btn,#RegisterForm .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#LoginForm form .btn:focus {
+    outline: none;
+}
+#LoginForm{
+    left: -300px
+
+}
+#RegisterForm{
+    left: 0
+}
+
+form a {
+    font-size: 12px;
+
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+.input-group span {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+}
+.input-group .valid {
+    font-size: 14px;
+    color: #6fd649;
+    font-weight: bold;
+}
+.input-group{
+    margin: 0 ;
+}
+
+#register-error {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+}
+#login-error {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
 }
