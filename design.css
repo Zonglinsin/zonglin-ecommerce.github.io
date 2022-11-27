@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 .nav-container {
+    max-width: 100%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     background: #e3e6e3;
+
 }
+   
 .navbar{
     display: flex;
     align-items: center;
@@ -21,40 +32,25 @@ nav ul {
     display: inline-block;
     list-style-type: none;
     z-index: 2;
+    padding: 0 20px;
 }
 
 nav ul li {
     display: inline-block;
     margin-right: 20px;
+    font-size: 20px;
 
 }
 
 .navbar a:hover{
     color: #ff523b;
 }
-
-
-
 a{
     text-decoration: none;
     color: #555;
 }
-
 p{
     color: #555;
-}
-
-.nav-container {
-    max-width: 100%;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-
 }
 
 .row {
@@ -63,22 +59,38 @@ p{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.banner-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
 
-.col-2 {
+.banner {
     flex-basis: 50%;
     min-width: 300px;
 }
 
-.col-2 img {
+.banner img {
     max-width: 100%;
     padding: 50px 0;
 }
 
-.col-2 h1 {
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
+.banner h5 {
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: 600;
 }
+.banner h4 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+.banner p{
+    font-size: 23px;
+    font-weight: 100;
+} 
 .btn {
     display: inline-block;
     background-color: #ff523b;
@@ -86,6 +98,14 @@ p{
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
+}
+
+.btn-2 {
+    display: inline-block;
+    border: 1px solid;
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
 }
 .menu-icon { 
     width: 28px;
@@ -230,7 +250,6 @@ p{
 .offer {
     background: radial-gradient(#fff,#ffd6d6);
     margin-top: 80px;
-    padding: 30px 0;
 }
 
 .form-container {
