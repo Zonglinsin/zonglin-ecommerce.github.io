@@ -47,11 +47,11 @@ function login(){
 let popup = document.getElementById("popup");
 
 function openPopup(){
-    popup.classList.add("open-popup");
+    popup.style.visibility = 'visible'
 }
 
 function closePopup(){
-    popup.classList.remove("open-popup");
+    popup.style.visibility = 'hidden'
 }
 
 
@@ -63,7 +63,10 @@ var registerError = document.getElementById('register-error')
 var loginError = document.getElementById('login-error')
 var UsernameError = document.getElementById('Username-error');
 var LoginpassError = document.getElementById('Loginpass-error')
-
+var ContactnameError = document.getElementById('Contactname-error')
+var SubjectError = document.getElementById('subject-error')
+var MessageError = document.getElementById('message-error')
+var contactError = document.getElementById('contact-error')
 
 function validateName(){
     var name = document.getElementById('username').value;
@@ -79,7 +82,20 @@ function validateName(){
     nameError.innerHTML = '<span class="valid">valid</span>';
     return true;  
 }
+function validateContactName(){
+    var Contactname = document.getElementById('Contactname').value;
 
+    if(Contactname.length == 0){
+        ContactnameError.innerHTML = 'Name cant be blank!';
+        return false;
+    }
+    if(Contactname.length < 3){
+        ContactnameError.innerHTML = 'Name Invalid';
+        return false;
+    }
+    ContactnameError.innerHTML = '<span class="valid">valid</span>';
+    return true;  
+}
 function validateEmail(){
     var email = document.getElementById('email').value;
 
@@ -94,7 +110,30 @@ function validateEmail(){
     emailError.innerHTML = '<span class="valid">valid</span>';
     return true;  
 }
+function validateSubject(){
+    var subject = document.getElementById('subject').value;
 
+    if(subject.length == 0){
+        SubjectError.innerHTML = 'Subject cant be blank!';
+        return false;
+    }
+    if(subject.length < 3){
+        SubjectError.innerHTML = 'Subject Invalid';
+        return false;
+    }
+    SubjectError.innerHTML = '<span class="valid">valid</span>';
+    return true;  
+}
+function validateMessage(){
+    var message = document.getElementById('message').value;
+
+    if(message.length == 0){
+        MessageError.innerHTML = 'Message cant be blank!';
+        return false;
+    }
+    MessageError.innerHTML = '<span class="valid">valid</span>';
+    return true;  
+}
 function validatePass(){
     var pass = document.getElementById('pass').value;
 
@@ -129,7 +168,6 @@ function validateLoginPass(){
     LoginpassError.innerHTML = '<span class="valid">valid</span>';
     return true;  
 }
-
 function validateRegisterForm(){
     if(!validateName() || !validateEmail() || !validatePass()){
         registerError.style.display = 'block'
@@ -137,8 +175,10 @@ function validateRegisterForm(){
         setTimeout(function(){registerError.style.display = 'none';}, 3000)
         return false;
     }
-    popup.classList.add("open-popup");
-    return true;
+    else{
+        popup.style.visibility = 'visible'
+        return true;
+    }
 }
 function validateLoginForm(){
     if(!validateUsername() || !validateLoginPass()){
@@ -147,7 +187,23 @@ function validateLoginForm(){
         setTimeout(function(){loginError.style.display = 'none';}, 3000)
         return false;
     }
-    popup.classList.add("open-popup");
-    return true;
+    else{
+        popup.style.visibility = 'visible'
+        return true;
+    }  
+}
+function validateContactForm(){
+    if(!validateContactName()||!validateEmail()||!validateMessage||!validateSubject){
+        contactError.style.display = 'block'
+        contactError.innerHTML = 'Invalid Login';
+        setTimeout(function(){contactError.style.display = 'none';}, 3000)
+        return false;
+    }
+    else{
+        popup.style.visibility = 'visible'
+        return true;
+    }
+    
+
 }
 

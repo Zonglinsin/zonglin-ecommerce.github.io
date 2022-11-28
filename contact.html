@@ -33,11 +33,24 @@
             <form action="#">
                 <span>LEAVE A MESSAGE TO US</span>
                 <h2>We love to hear you</h2>
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Subject">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" onkeyup="validateContactName()" id="Contactname">
+                    <span id="Contactname-error"></span>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Email" onkeyup="validateEmail()" id="email">
+                    <span id="email-error"></span>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Subject" onkeyup="validateSubject()" id="subject">
+                    <span id="subject-error"></span>
+                </div>
+                <div class="input-group">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" onkeyup="validateMessage()"></textarea>
+                    <span id="message-error"></span>
+                </div>
+                <button type="button" class="btn" onclick="return validateContactForm()">Submit</button>
+                <span id="contact-error"></span>
             </form>
         </div>
         <div class="popup" id="popup">

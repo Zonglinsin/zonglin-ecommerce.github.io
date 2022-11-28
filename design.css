@@ -445,10 +445,26 @@ p{
 }
 
 .contact-form-details form textarea,.contact-form-details form input{
-    width: 100%;
+    width: 80%;
     padding: 12px 15px;
     outline: none;
+    flex-basis: 68%;
     border: 1px solid #e1e1e1;
+    margin-right: 20px;
+    position: relative;
+}
+
+.contact-form-details .input-group{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.contact-form-details .input-group span{
+    width: 20%;
+    position: relative;
+    right: 5px;
 }
 
 .contact-form-details form button{
@@ -460,14 +476,28 @@ p{
     background: #fff;
     border-radius: 6px;
     position: absolute;
-    top: 0;
+    border: 1px solid #e1e1e1;
+    top: 100%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     padding: 0 30px 30px;
     color: #333;
-    visibility: hidden  ;
-    transition: transform 0.4s, top 0.4s;
+    visibility: hidden;
+}
+.account-page .popup{
+    width: 400px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
 }
 .open-popup{
     visibility: visible;
@@ -611,7 +641,7 @@ form a {
     color: red;
     font-weight: bold;
 }
-#login-error {
+#login-error, #contact-error{
     font-size: 14px;
     color: red;
     font-weight: bold;
