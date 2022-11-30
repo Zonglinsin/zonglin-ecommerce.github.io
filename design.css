@@ -104,7 +104,7 @@ p{
 /*button-type*/
 .btn {
     display: inline-block;
-    background-color: #ff523b;
+    background-color: #414141;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -163,8 +163,7 @@ p{
     padding: 9px 8px 6px;
     line-height: 1;
     border-radius: 4px;
-    color: #088178;
-    background-color: #fddded;
+    color: #000;
 }
 
 .feauture .feauture-container img {
@@ -182,7 +181,7 @@ p{
 
 .title::after{
     content: '';
-    background: #ff523b;
+    background: #414141;
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -254,21 +253,21 @@ p{
     background: radial-gradient(#414141,#000);
 }
 
-.services h4{
+.services h4, .product-header h4{
     color: #fff;
     font-size: 18px;
 }
-.services h3{
+.services h3,.product-header h3{
     padding: 10px 0;
     font-size: 50px;
     color: #fff;
 }
-.services h2{
+.services h2 ,.product-header h2{
     font-size: 25px;
     color: #fff;
     padding-bottom: 10px;
 }
-.services span{
+.services span ,.product-header span{
     color: #e62a2a;
 }
 
@@ -373,9 +372,50 @@ p{
     color: #fff;
     font-weight: 600;
 }
+
+/**/
+.cart-table{
+    padding: 40px 80px;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #414141;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #414141;
+    width: 100%;
+    max-width: 350px;
+}
 /*Contact-Page*/
 .contact-header{
-    background-image: url("images/about/banner.png");
+    background-image: url("images/about/Deco_Brick_Background.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -448,10 +488,7 @@ p{
     right: 5px;
 }
 
-.contact-form-details form button{
-    background-color: #ff523b;
-    color: #fff;
-}
+
 .popup{
     width: 400px;
     background: #fff;
@@ -574,7 +611,7 @@ form a {
 #Indicator {
     width: 100px;
     border: none;
-    background: #ff523b;
+    background: #414141;
     height: 3px;
     margin-top: 8px;
     transform: translateX(100px);
@@ -651,6 +688,9 @@ form a {
     .banner{
         margin-bottom: 10px;
     }
+    .cart-table{
+        padding: 20px;
+    }
 }
 
 /*Navbar media@*/
@@ -676,7 +716,8 @@ form a {
     .menu-icon {
         display: block;
         cursor: pointer;
-    }   
+    }
+    
 }
 @media only screen and (max-width: 768px) and (min-width: 499px){
     .services{

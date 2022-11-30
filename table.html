@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+   <div class="nav-container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><div class="logo">LOGO</div></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+   </div>
+   <div class="cart-table">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/product/product-3.png" alt="">
+                    </div>
+                    <div>
+                        <p>Apple Watch</p>
+                        <small>Price: RM2299.00</small>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>RM 2399.00.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Total</td>
+                    <td>RM2299.00</td>
+                </tr>
+            </table>
+        </div>
+   </div>
+
+    <div class="footer">
+        <div class="small-container">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>56 Jalan Ding Ding Dong Selangor Malaysia</p>
+            <p><strong>Phone: </strong>contact@example.com</p>
+            <p><strong>Hours: </strong>Monday to Saturday: 9:00am to 16:00pm</p>
+        </div>
+        <div class="small-container">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="small-container">
+            <h4>My Account</h4>
+            <a href="account.html">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Support & Help</a>
+        </div>
+        <div class="app">
+            <h4>Download Our App</h4>
+            <p>From App Store or Google Play</p>
+        </div>
+        <div class="copyright">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
