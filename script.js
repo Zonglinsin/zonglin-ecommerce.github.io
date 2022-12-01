@@ -203,7 +203,5 @@ function validateContactForm(){
         popup.style.visibility = 'visible'
         return true;
     }
-    
-
 }
 
