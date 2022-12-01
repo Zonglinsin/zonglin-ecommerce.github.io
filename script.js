@@ -195,7 +195,7 @@ function validateLoginForm(){
 function validateContactForm(){
     if(!validateContactName()||!validateEmail()||!validateMessage||!validateSubject){
         contactError.style.display = 'block'
-        contactError.innerHTML = 'Invalid Login';
+        contactError.innerHTML = 'Invalid Submission';
         setTimeout(function(){contactError.style.display = 'none';}, 3000)
         return false;
     }
