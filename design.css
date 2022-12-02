@@ -191,23 +191,24 @@ p{
     transform: translateX(-50%);
 }
 .product1 , .product2{
-    text-align: center;
     padding: 40px 80px;
+    text-align: center;
+
 }
 .product2 .prod-container, .product1 .prod-container{
-    display: flex;
-    justify-content: space-between;
     padding-top: 20px;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .product1 .product, .product2 .product{
+    padding: 10px 12px;
+    margin: 15px 0;
     width: 24%;
     min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    margin: 15px 0;
     box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
     border-radius: 25px;
+    border: 1px solid #cce7d0;
     transition: 0.2 ease;
 }
 .product1 .product:hover ,.product2 .product:hover{
@@ -219,25 +220,28 @@ p{
 }
 
 .product1 .product .des ,.product2 .product .des{
-    text-align: start;
     padding: 10px 0;
+    text-align: start;
 }
 .product1 .product .des span ,.product2 .product .des span{
-    color: #606063;
     font-size: 14px;
+    color: #606063;
+    
 }
 
 .product1 .product .des h5, .product2 .product .des h5{
-    padding-top: 7px;
-    color: #1a1a1a;
     font-size: 20px;
+    color: #1a1a1a;
+    padding-top: 7px;
+    
+    
 }
 
 .product1 .product .des h4 ,.product2 .product .des h4{
-    padding-top: 7px;
     font-size: 20px;
     font-weight: 700;
     color: #088178;
+    padding-top: 7px;
 }
 
 /*Services-HomePage*/

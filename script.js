@@ -193,7 +193,7 @@ function validateLoginForm(){
     }  
 }
 function validateContactForm(){
-    if(!validateContactName()||!validateEmail()||!validateMessage||!validateSubject){
+    if(!validateContactName()||!validateEmail()||!validateMessage()||!validateSubject()){
         contactError.style.display = 'block'
         contactError.innerHTML = 'Invalid Submission';
         setTimeout(function(){contactError.style.display = 'none';}, 3000)
